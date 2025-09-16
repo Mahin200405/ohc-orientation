@@ -47,7 +47,7 @@ function App() {
     setError(null);
     
     try {
-      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:8000"}/user/has-taken-quiz`, {
+      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL || "https://ohc-backend-production.up.railway.app"}/user/has-taken-quiz`, {
         params: { user_email: user.email },
       });
       

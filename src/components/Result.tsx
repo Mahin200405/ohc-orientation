@@ -13,7 +13,7 @@ interface ResultProps {
 export default function Result({ userId, points, timeTaken, onSubmitted, uniLogo, clubLogo }: ResultProps) {
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:8000/result", {
+      await axios.post("https://ohc-backend-production.up.railway.app/result", {
         user_id: userId,
         points,
         time_taken: timeTaken,
