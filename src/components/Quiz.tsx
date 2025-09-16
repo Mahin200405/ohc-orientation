@@ -92,7 +92,7 @@ export default function Quiz({ questions, onComplete, uniLogo, clubLogo }: QuizP
                   className="max-w-full h-16 object-contain rounded border"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    
+                    target.style.display = 'none';
                   }}
                 />
               </div>
