@@ -1,5 +1,5 @@
 // Add this to the top of your Quiz.tsx component
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import type { Question, QuestionOption } from "../types";
 
 interface QuizProps {
