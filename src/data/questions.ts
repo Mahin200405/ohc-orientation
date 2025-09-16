@@ -27,7 +27,7 @@ export const questions: Question[] = [
     id: "3",
     q: "Which of the following are complementary colors?",
     a: [
-      { text: "Blue and Yellow", image: "/assets/questions/3a1.png" },
+      { text: "", image: "/assets/questions/3a1.png" },
       { text: "", image: "/assets/questions/3b.png" },
       { text: "", image: "/assets/questions/3c.png" }
     ],
