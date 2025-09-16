@@ -138,8 +138,8 @@ function App() {
           <Login 
             onLogin={handleLogin} 
             hasTakenQuiz={hasTakenQuiz} 
-            uniLogo="/assets/uni_logo.svg" 
-            clubLogo="/assets/club_logo.svg" 
+            uniLogo="/assets/uni_logo.png" 
+            clubLogo="/assets/club_logo.png" 
           />
         )}
         
@@ -147,8 +147,8 @@ function App() {
           <Quiz 
             questions={questions} 
             onComplete={handleQuizComplete} 
-            uniLogo="/assets/uni_logo.svg" 
-            clubLogo="/assets/club_logo.svg" 
+            uniLogo="/assets/uni_logo.png" 
+            clubLogo="/assets/club_logo.png" 
           />
         )}
         
