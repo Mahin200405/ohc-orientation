@@ -19,7 +19,7 @@ export default function Leaderboard({ userEmail, uniLogo, clubLogo }: Leaderboar
   useEffect(() => {
     async function fetchLeaderboard() {
       try {
-        const res = await axios.get("https://ohc-backend-production.up.railway.app/leaderboard");
+        const res = await axios.get("https://ohc-backend.onrender.com/leaderboard");
         setEntries(res.data);
       } catch {
         alert("Failed to load leaderboard");
