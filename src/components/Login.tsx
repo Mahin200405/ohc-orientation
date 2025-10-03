@@ -14,7 +14,7 @@ export default function Login({ onLogin, hasTakenQuiz, uniLogo, clubLogo }: Logi
   const handleSuccess = async (response: CredentialResponse) => {
     if (!response.credential) return alert("Google login failed");
     try {
-      const res = await axios.post("https://ohc-backend-production.up.railway.app/auth/google", {
+      const res = await axios.post("https://ohc-backend.onrender.com/auth/google", {
         token: response.credential,
       });
       onLogin(res.data);
